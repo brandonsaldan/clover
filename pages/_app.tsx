@@ -61,4 +61,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   </>
 )}
 
-export default MyApp
+export default MyApp; ({ Component, pageProps }: AppProps) => (
+  <GeistProvider>
+    <CssBaseline />
+    <Component {...pageProps} />
+  </GeistProvider>
+)
