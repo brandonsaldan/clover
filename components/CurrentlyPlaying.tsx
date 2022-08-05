@@ -7,7 +7,7 @@ const CurrentlyPlaying = () => {
   
     if (lastFM.status === 'error') {
       return (
-        <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none lg:rounded-lg flex h-8">
+        <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8">
             <i className="ml-4 fa-brands fa-spotify"></i>
             <p className="ml-2">API Error: Please contact me :)</p>
         </div>
@@ -23,7 +23,7 @@ const CurrentlyPlaying = () => {
     }
   
     return (
-      <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none lg:rounded-lg flex h-8">
+      <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8 ">
         <i className="ml-4 fa-brands fa-spotify"></i>
         <p className="ml-2">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
       </div>

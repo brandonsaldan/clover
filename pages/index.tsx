@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 mt-12">
-        <main className="mt-32">
+        <main className="mt-24 sm:mt-32">
           <About />
         </main>
       </div>

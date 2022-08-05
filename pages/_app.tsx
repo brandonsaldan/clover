@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { useEffect } from 'react'
 
 import Head from 'next/head'
 import { PageTransition } from 'next-page-transitions'
@@ -10,6 +11,9 @@ import Loader from '../components/Loader'
 const timeout = 400
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+  }, []);
   return (
   <>
     <Head>
