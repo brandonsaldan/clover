@@ -8,7 +8,7 @@ import CurrentlyPlaying from '../components/CurrentlyPlaying'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-white dark:bg-[#070816] flex min-h-screen flex-col py-2">
+    <div className="bg-white dark:bg-[#000000] flex min-h-screen flex-col py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 mt-12">
-        <main className="">
+        <main className="mt-32">
           <About />
         </main>
       </div>
