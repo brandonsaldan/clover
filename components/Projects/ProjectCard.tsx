@@ -27,12 +27,12 @@ const projects = [
 
 const About = () => {
     return (
-        <ul role="list" className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <ul role="list" className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 px-6 sm:px-0">
             {projects.map((project) => (
                 <div className="fieldset-270 bg-white">
                     <div className="fieldset-352 bg-white dark:bg-black">
                       <div className="fieldset-410 text-black dark:text-white">{project.name}</div>
-                      <div className="fieldset-226 w-80 text-black dark:text-white">{project.desc}</div>
+                      <div className="fieldset-226 w-72 sm:w-80 text-black dark:text-white">{project.desc}</div>
                     </div>
                     <footer className="fieldset-174 bg-[#fafafa] dark:bg-[#101010] dark:text-white">{project.lang}</footer>
                 </div>            
