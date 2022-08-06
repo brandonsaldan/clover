@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 
 import ProjectText from '../components/Projects/ProjectText'
 import ProjectCard from '../components/Projects/ProjectCard'
