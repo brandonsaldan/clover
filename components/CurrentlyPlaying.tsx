@@ -1,6 +1,8 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import { useLastFM } from 'use-last-fm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 
 const CurrentlyPlaying = () => {
     const lastFM = useLastFM('shibbbe', '');
@@ -8,7 +10,7 @@ const CurrentlyPlaying = () => {
     if (lastFM.status === 'error') {
       return (
         <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8">
-            <i className="ml-4 fa-brands fa-spotify"></i>
+            <FontAwesomeIcon icon={faSpotify} className="ml-4" />
             <p className="ml-2">API Error: Please contact me :)</p>
         </div>
         );
@@ -25,7 +27,7 @@ const CurrentlyPlaying = () => {
     return (
       <a href="https://www.last.fm/user/shibbbe">
         <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8 ">
-          <i className="ml-4 fa-brands fa-spotify"></i>
+        <FontAwesomeIcon icon={faSpotify} className="ml-4" />
           <p className="ml-2">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
         </div>
       </a>

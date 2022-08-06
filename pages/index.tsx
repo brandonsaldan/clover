@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <meta property="og:url" content="https://brandons.place/" />
         <meta property="og:title" content="Brandon Saldan - Website and Portfolio" />
         <meta property="og:description" content="Business and Computer Science student from Pennsylvania" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
         <script src="https://kit.fontawesome.com/d6ce3288bb.js" crossOrigin="anonymous"></script>

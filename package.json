@@ -6,6 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@geist-ui/core": "^2.3.8",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
