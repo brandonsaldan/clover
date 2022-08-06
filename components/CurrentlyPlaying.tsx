@@ -23,10 +23,12 @@ const CurrentlyPlaying = () => {
     }
   
     return (
-      <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8 ">
-        <i className="ml-4 fa-brands fa-spotify"></i>
-        <p className="ml-2">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
-      </div>
+      <a href="https://www.last.fm/user/shibbbe">
+        <div className="pb-2 w-full bg-black dark:bg-[#1DB954] rounded-lg items-center text-white leading-none flex h-8 ">
+          <i className="ml-4 fa-brands fa-spotify"></i>
+          <p className="ml-2">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
+        </div>
+      </a>
     );
   };
 
