@@ -24,9 +24,6 @@ const Header = () => {
             <a href="/projects" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
               Projects
             </a>
-            <a href="/blog" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
-              Blog
-            </a>
           </Popover.Group>
         </div>
       </div>
@@ -60,10 +57,6 @@ const Header = () => {
 
                 <a href="/projects" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
                   Projects
-                </a>
-
-                <a href="/blog" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
-                  Blog
                 </a>
               </div>
             </div>

@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import About from '../components/Home/About'
-import ProjectCard from '../components/ProjectCard'
 import CurrentlyPlaying from '../components/CurrentlyPlaying'
 import Header from '../components/Header'
 
