@@ -28,7 +28,7 @@ const CurrentlyPlaying = () => {
       <a href="https://www.last.fm/user/shibbbe">
         <div className="flex pb-2 w-full bg-black dark:bg-[#1DB954] sm:rounded-lg items-center text-white leading-none h-8 ">
         <FontAwesomeIcon icon={faSpotify} className="ml-4 h-4 w-4" />
-          <p className="ml-2">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
+          <p className="ml-2 truncate">Listening to <a className="font-semibold text-inherit">{lastFM.song.name}</a> by <a className="font-semibold text-inherit">{lastFM.song.artist}</a></p>
         </div>
       </a>
     );
