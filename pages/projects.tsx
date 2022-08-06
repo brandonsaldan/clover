@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import About from '../components/Home/About'
-import ProjectCard from '../components/ProjectCard'
+import ProjectText from '../components/Projects/ProjectText'
+import ProjectCard from '../components/Projects/ProjectCard'
 import CurrentlyPlaying from '../components/CurrentlyPlaying'
 import Header from '../components/Header'
 
@@ -28,7 +28,8 @@ const Home: NextPage = () => {
       <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 mt-12">
         <main className="">
           <Header />
-          <About />
+          <ProjectText />
+          <ProjectCard />
         </main>
       </div>
       <div className="mt-auto">
