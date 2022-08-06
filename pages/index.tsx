@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/d6ce3288bb.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d6ce3288bb.js" crossOrigin="anonymous"></script>
       </Head>
 
       <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 mt-12">
