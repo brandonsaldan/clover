@@ -11,9 +11,6 @@ import Loader from '../components/Loader'
 const timeout = 400
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
   return (
   <>
     <Head>
