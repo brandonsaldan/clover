@@ -35,11 +35,11 @@ const About = () => {
             {projects.map((project) => (
               <a href={project.href}>
                 <div className="fieldset-270 bg-white transition ease-in-out delay-50 hover:scale-105">
-                    <div className="fieldset-352 bg-white dark:bg-black">
+                    <div className="fieldset-352 bg-white dark:bg-[#111111]">
                       <div className="fieldset-410 text-black dark:text-white">{project.name}</div>
                       <div className="fieldset-226 w-72 sm:w-80 text-black dark:text-white">{project.desc}</div>
                     </div>
-                    <footer className="fieldset-174 bg-[#fafafa] dark:bg-[#101010] dark:text-white">{project.lang}</footer>
+                    <footer className="fieldset-174 bg-[#fafafa] dark:bg-[#141414] dark:text-white">{project.lang}</footer>
                 </div> 
                 </a>    
             ))}
