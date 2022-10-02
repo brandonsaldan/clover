@@ -7,7 +7,7 @@ import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-white dark:bg-[#000000] flex min-h-screen flex-col py-2">
+    <div className="bg-white dark:bg-[#000000] flex min-h-screen flex-col">
       <Head>
         <title>Brandon Saldan - Website and Portfolio</title>
         <meta name="description" content="Business and Computer Science student from Pennsylvania" />
