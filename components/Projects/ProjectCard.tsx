@@ -1,7 +1,3 @@
-import { Text } from '@geist-ui/core'
-
-import { Button, Fieldset, Collapse } from '@geist-ui/core'
-
 const projects = [
     {
       name: 'Sassafras',

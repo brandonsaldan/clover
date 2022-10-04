@@ -2,26 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.ru {
-    text-decoration-color: #a8c23e;
-}
-
-.iu {
-    text-decoration-color: #ff7676;
-}
-
-.lu {
-    text-decoration-color: #0a66c2;
-}
-
-.tu {
-    text-decoration-color: #1da1f2;
-}
-
-.gu {
-    text-decoration-color: #4183C4;
-}
-
 .project-footer-color {
     background-color: #d01818;
 }

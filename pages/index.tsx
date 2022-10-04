@@ -2,12 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import About from '../components/Home/About'
-import CurrentlyPlaying from '../components/CurrentlyPlaying'
-import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-white dark:bg-[#000000] flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <Head>
         <title>Brandon Saldan - Website and Portfolio</title>
         <meta name="description" content="Business and Computer Science student from Pennsylvania" />
@@ -20,18 +18,9 @@ const Home: NextPage = () => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/d6ce3288bb.js" crossOrigin="anonymous"></script>
       </Head>
 
-      <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 mt-12">
-        <main className="">
-          <Header />
-          <About />
-        </main>
-      </div>
-      <div className="mt-auto">
-        <CurrentlyPlaying />
-      </div>
+      <About />
     </div>
   )
 }

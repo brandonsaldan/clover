@@ -1,12 +1,13 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { useEffect } from 'react'
 
 import Head from 'next/head'
 import { PageTransition } from 'next-page-transitions'
 import { GeistProvider, CssBaseline } from '@geist-ui/core'
 
 import Loader from '../components/Loader'
+import Status from '../components/Status'
+import Header from '../components/Header'
 
 const timeout = 400
 
@@ -14,24 +15,45 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
   <>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brandon Saldan - Website and Portfolio</title>
+        <meta name="description" content="Business and Computer Science student from Pennsylvania" />
+        <meta name="keywords" content="Brandon Saldan, Saldan, brandons.place, saldan.dev" />
+        <meta name="author" content="Brandon Saldan" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brandons.place/" />
+        <meta property="og:title" content="Brandon Saldan" />
+        <meta property="og:description" content="Business & Computer Science Student" />
+        <meta content="https://avatars.githubusercontent.com/u/26472557?v=4" property="og:image" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
     </Head>
-    <PageTransition
-      timeout={timeout}
-      classNames="page-transition"
-      loadingComponent={<Loader />}
-      loadingDelay={500}
-      loadingTimeout={{
-        enter: timeout,
-        exit: 0,
-      }}
-      loadingClassNames="loading-indicator"
-    >
-      <GeistProvider>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </GeistProvider>
-    </PageTransition>
+    <div className="bg-white dark:bg-[#000000] h-full">
+    <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 h-screen">
+      <div className="pt-12 pb-12">
+      <Header />
+      <PageTransition
+        timeout={timeout}
+        classNames="page-transition"
+        loadingComponent={<Loader />}
+        loadingDelay={10}
+        loadingTimeout={{
+          enter: timeout,
+          exit: 0,
+        }}
+        loadingClassNames="loading-indicator"
+      >
+        <GeistProvider>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </GeistProvider>
+      </PageTransition>
+    </div>
+    </div>
+    <div className="absolute bottom-0 w-full">
+      <Status />
+    </div>
+    </div>
     <style jsx global>{`
       .page-transition-enter {
         opacity: 0;
