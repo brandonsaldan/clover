@@ -32,7 +32,7 @@ More information on Lanyard and how to use it can be found on its repo.
 
 ## Meta
 
-Brandon Saldan – [@brandonsaldan](https://twitter.com/brandonsaldan) –[in/brandonsaldan](brandonsaldan)
+Brandon Saldan – [@brandonsaldan](https://twitter.com/brandonsaldan) – [in/brandonsaldan](brandonsaldan)
 
 Distributed under the GPL license. See ``LICENSE`` for more information.
 
