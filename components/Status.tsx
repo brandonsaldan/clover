@@ -1,9 +1,9 @@
-import { useLanyardWs } from "use-lanyard";
+import { useLanyardWS } from "use-lanyard";
 import { SiSpotify, SiVisualstudiocode } from "react-icons/si";
 import 'animate.css';
 
 const Status = () => {
-    const data = useLanyardWs("261953350860275713");
+    const data = useLanyardWS("");
     const listening = data?.spotify || null;
     const coding = data?.activities.find(
         (a) => a.application_id === "383226320970055681"
