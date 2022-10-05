@@ -86,3 +86,7 @@
     padding: calc(0.625 * 16px) calc(1.31 * 16px) calc(0.625 * 16px) calc(1.31 * 16px);
     margin: 0 0 0 0;
 }
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 0.35s;
+}
