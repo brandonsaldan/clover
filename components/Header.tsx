@@ -25,6 +25,11 @@ const Header = () => {
               Projects
             </a>
             </Link>
+            <Link href="/about">
+            <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
+              About
+            </a>
+            </Link>
           </Popover.Group>
         </div>
       </div>
@@ -58,6 +63,10 @@ const Header = () => {
 
                 <a href="/projects" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
                   Projects
+                </a>
+
+                <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
+                  About
                 </a>
               </div>
             </div>

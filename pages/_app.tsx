@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Head>
     <div className="bg-white dark:bg-[#000000] h-full">
     <div className="mx-auto max-w-3xl sm:px-6 lg:px-8 h-screen">
-      <div className="pt-12 pb-12">
+      <div className="pt-12 pb-12 bg-white dark:bg-[#000000]">
       <Header />
       <PageTransition
         timeout={timeout}
