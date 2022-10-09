@@ -1,5 +1,8 @@
 import { IconType } from "react-icons";
 import { SiVuedotjs, SiNuxtdotjs, SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiPython, SiHtml5, SiCss3, SiTailwindcss, SiGit, SiVite } from "react-icons/si";
+import useSound from "use-sound";
+
+const hoverSound = "/sound/hover.mp3";
 
 const toolsList = [
     {
@@ -53,9 +56,10 @@ const toolsList = [
 ]
 
 const Item = ({ name, _icon }: { name: string; _icon: IconType }) => {
+    const [play] = useSound(hoverSound);
     return (
       <a href={toolsList.find((tool) => tool.name === name)?.href}>
-      <div className="flex items-center rounded-md border border-[#eaeaea] bg-white dark:bg-[#111111] pl-3 transition ease-in-out delay-50 hover:scale-105">
+      <div onMouseEnter={() => play()} className="flex items-center rounded-md border border-[#eaeaea] bg-white dark:bg-[#111111] pl-3 transition ease-in-out delay-50 hover:scale-105">
         <_icon className="h-5 w-5 text-black dark:text-white pr-2" />
         <p className="text-black dark:text-white">{name}</p>
       </div>
