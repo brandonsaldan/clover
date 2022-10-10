@@ -20,7 +20,7 @@ const About = () => {
       getPinnedRepos();
     }, []);
     return (
-      <ul role="list" className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 px-6 sm:px-0">
+      <ul role="list" className="animate__animated animate__fadeIn mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 px-6 sm:px-0">
           {projects.map((project) => {
             return (
               <a href={project.link}>
