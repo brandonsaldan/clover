@@ -21,10 +21,10 @@ const About = () => {
     }, []);
     return (
       <ul role="list" className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 px-6 sm:px-0">
-          {projects.map((project, key) => {
+          {projects.map((project) => {
             return (
               <a href={project.link}>
-              <div key={key} onMouseEnter={() => play()} className="fieldset-270 bg-white transition ease-in-out delay-50 hover:scale-105">
+              <div onMouseEnter={() => play()} className="fieldset-270 bg-white transition ease-in-out delay-50 hover:scale-105">
                   <div className="fieldset-352 bg-white dark:bg-[#111111]">
                     <div className="fieldset-410 text-black dark:text-white">{project.repo.charAt(0).toUpperCase() + project.repo.slice(1)}</div>
                     <div className="fieldset-226 w-72 sm:w-80 text-black dark:text-white">{project.description}</div>
