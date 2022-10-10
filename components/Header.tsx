@@ -13,20 +13,20 @@ const Header = () => {
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
         </div>
-        <div onClick={() => void new Audio("/sound/nav.mp3").play().catch(() => null)} className="hidden md:flex-1 md:flex md:items-center md:justify-between">
+        <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
           <Popover.Group as="nav" className="flex space-x-10">
             <Link href="/">
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
+            <a onClick={() => void new Audio("/sound/nav.mp3").play().catch(() => null)} className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
               Home
             </a>
             </Link>
             <Link href="/projects">
-            <a href="/projects" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
+            <a onClick={() => void new Audio("/sound/nav.mp3").play().catch(() => null)} className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
               Projects
             </a>
             </Link>
             <Link href="/about">
-            <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
+            <a onClick={() => void new Audio("/sound/nav.mp3").play().catch(() => null)} className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">
               About
             </a>
             </Link>
