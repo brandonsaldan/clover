@@ -9,7 +9,7 @@ const hoverSound = "/sound/hover.mp3";
 const About = () => {
     const [play] = useSound(hoverSound);
     const [projects, setProjects] = useState<any[]>([]);
-    const getPinnedRepos = async () => {
+    const getPinnedRepos = () => {
       fetch("https://gh-pinned-repos.egoist.dev/?username=brandonsaldan")
       .then((response) => response.json())
       .then((data) => setProjects(data))
