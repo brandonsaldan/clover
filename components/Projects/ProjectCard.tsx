@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { TbGitFork } from "react-icons/tb"
 import { AiFillStar } from "react-icons/ai"
+import LoadingRing  from "../ui/LoadingRing"
 
 const hoverSound = "/sound/hover.mp3";
 
@@ -20,6 +21,14 @@ const About = () => {
       getPinnedRepos();
     }, []);
     return (
+      <div>
+        <LoadingRing
+          visible={projects.length === 0}
+          height="80"
+          width="80"
+          ariaLabel="loading"
+          wrapperClass="mx-auto"
+        />
       <ul role="list" className="animate__animated animate__fadeIn mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 px-6 sm:px-0">
           {projects.map((project) => {
             return (
@@ -52,6 +61,7 @@ const About = () => {
             )   
           })}
       </ul>
+      </div>
     );
 }
 
