@@ -1,6 +1,6 @@
 import { Text } from '@geist-ui/core'
 
-const About = () => {
+const homeText = () => {
     return (
         <div className="text-black dark:text-white px-6 sm:px-0">
             <Text h3>Brandon Saldan</Text>
@@ -12,4 +12,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default homeText;

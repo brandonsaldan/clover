@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import ProjectText from '../components/Projects/ProjectText'
-import ProjectCard from '../components/Projects/ProjectCard'
+import ProjectText from '../components/ui/text/ProjectText'
+import ProjectCard from '../components/ui/ProjectCard'
 
-const Home: NextPage = () => {
+const Projects: NextPage = () => {
   return (
     <div className="flex flex-col">
       <Head>
@@ -27,4 +27,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Projects

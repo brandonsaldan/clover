@@ -1,6 +1,6 @@
 import React from 'react'
 
-const loader = () => (
+const Loader = () => (
   <div className="loader">
     <style jsx>{`
       .loader {
@@ -26,4 +26,4 @@ const loader = () => (
   </div>
 )
 
-export default loader
+export default Loader

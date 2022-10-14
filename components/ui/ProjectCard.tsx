@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 
 import { TbGitFork } from "react-icons/tb"
 import { AiFillStar } from "react-icons/ai"
-import LoadingRing  from "../ui/LoadingRing"
+import LoadingIndicator  from "../ui/load/LoadingIndicator"
 
 const hoverSound = "/sound/hover.mp3";
 
-const About = () => {
+const projectCard = () => {
     const [Show, setShow] = useState(false)
     const [play] = useSound(hoverSound);
     const [projects, setProjects] = useState<any[]>([]);
@@ -29,7 +29,7 @@ const About = () => {
       return (
         <div className="mx-auto animate__animated animate__fadeIn">
           <div>
-            <LoadingRing
+            <LoadingIndicator
               height="80"
               width="80"
               ariaLabel="loading"
@@ -84,4 +84,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default projectCard;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { DEFAULT_WAI_ARIA_ATTRIBUTE } from './type'
 
-export default function LoadingRing({
+export default function loadingIndicator({
   visible = true,
   width = '80',
   height = '80',

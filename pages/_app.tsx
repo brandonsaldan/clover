@@ -6,12 +6,12 @@ import { PageTransition } from 'next-page-transitions'
 import { GeistProvider, CssBaseline } from '@geist-ui/core'
 
 import Loader from '../components/Loader'
-import Status from '../components/Status'
+import StatusIndicator from '../components/ui/StatusIndicator'
 import Header from '../components/Header'
 
 const timeout = 400
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
   <>
     <Head>
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </div>
     </div>
     <div className="absolute bottom-0 w-full">
-      <Status />
+      <StatusIndicator />
     </div>
     </div>
     <style jsx global>{`
@@ -84,7 +84,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   </>
 )}
 
-export default MyApp; ({ Component, pageProps }: AppProps) => (
+export default App; ({ Component, pageProps }: AppProps) => (
   <GeistProvider>
     <CssBaseline />
     <Component {...pageProps} />

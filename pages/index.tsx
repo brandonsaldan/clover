@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import About from '../components/Home/About'
+import HomeText from '../components/ui/text/HomeText'
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <div className="flex flex-col">
       <Head>
@@ -20,9 +20,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <About />
+      <HomeText />
     </div>
   )
 }
 
-export default Home
+export default Index

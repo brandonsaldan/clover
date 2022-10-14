@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import AboutText from '../components/About/AboutText'
-import Tools from '../components/About/Tools'
+import AboutText from '../components/ui/text/AboutText'
+import ToolCard from '../components/ui/ToolCard'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div className="flex flex-col">
       <Head>
@@ -23,10 +23,10 @@ const Home: NextPage = () => {
 
       <AboutText />
       <div className="mt-2">
-        <Tools />
+        <ToolCard/>
       </div>
     </div>
   )
 }
 
-export default Home
+export default About

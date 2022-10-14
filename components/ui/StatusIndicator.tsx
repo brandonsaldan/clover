@@ -2,7 +2,7 @@ import { useLanyardWS } from "use-lanyard";
 import { SiSpotify, SiVisualstudiocode } from "react-icons/si";
 import 'animate.css';
 
-const Status = () => {
+const statusIndicator = () => {
     const data = useLanyardWS("261953350860275713");
     const listening = data?.spotify || null;
     const coding = data?.activities.find(
@@ -36,4 +36,4 @@ const Status = () => {
     )
 }
 
-export default Status;
+export default statusIndicator;
